@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Just some comments. Ignore them. 
+-->
+
+<!-- Edd Lawson, Updated Feb. 19th, 2020 -->
+
+	<head>
+		<meta charset="UTF-8">
+		<title> Physics and Astronomy Activity </title>
+		 <link rel="stylesheet" href="https://people.emich.edu/elawson3/myStyles/mystyles.css">
+		 
+		<script>
+				function noClue() {
+					var response = document.getElementById('aut').value;
+					if (response.toLowerCase() === "lion") {
+						var report = "Correct, Leo is a lion.";
+						document.getElementById('autReport').innerHTML = report;
+						document.getElementById('Q2').insertAdjacentHTML('beforeend', '<div id="idChild"> information <input id ="but" type="text" onchange="noClueToo()"> </div>');
+					} else {
+						var report = "Not quite, but I'll give you a hint. They can be found on some coats of arms.";
+						document.getElementById('autReport').innerHTML = report;
+					}
+				}
+				
+				function noClueToo() {
+					var response = document.getElementById('but').value;
+					var report = "This isn't done, yet.";
+					document.getElementById('butReport').innerHTML = report;
+				}
+		</script>
+	</head>
+	
+	<body>
+		<h3>The Society of Physics Students presents</h3>
+		<h3>in association with computer science</h3>
+		<h3>produced thanks to contributions by EMU</h3>
+		<h3>now in tecnicolour,</h3>
+		<h1>A Physics and Astronomy Guided Activity</h1>
+		<p>Below, you will be asked a series of questions. We haven't yet decided whether you will answer them in order 
+			or any order.</p>
+		<br>
+		<p>Up in the heavens, there is a mighty beast called Leo. What kind of animal is he? <input id ="aut" type="text" 
+			onchange="noClue()"></p>
+		
+		<pre class="taller" id="autReport"></pre>
+		<p id="Q2"></p>
+		<pre class="taller" id="butReport"></pre>
+	</body>
+</html>
