@@ -6,4 +6,4 @@ Those three are the template. To make use of them will require some editing. I s
 
 The page I found this on is https://webdevtrick.com/simple-quiz-in-php-source-code/.
 
-Also, it is important to note that the quiz as it is in the template is multiple choice. This can be changed using text boxes. Additionally, anything inside "<php> here </php>" is processed by the server and invisible to the user if they attempt to inspect the page.
+Also, it is important to note that the quiz as it is in the template is multiple choice. This can be changed using text boxes. Additionally, anything inside \<php> here \</php> is processed by the server and invisible to the user if they attempt to inspect the page.
